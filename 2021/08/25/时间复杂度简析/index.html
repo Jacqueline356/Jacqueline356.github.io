@@ -17,18 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>分类 | 枫筝</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://jacqueline356.github.io/categories/index.html">
+  <title>时间复杂度简析 | 枫筝</title>
+  <meta name="description" content="时间复杂度概念：*若存在函数 f（n），使得当n趋近于无穷大时，T（n）&#x2F; f（n）的极限值为不等于零的常数，则称 f（n）是T（n）的同数量级函数。* ** *记作* *T（n）&#x3D; O（f（n）），称O**（f（n））**为算法的渐进时间复杂度，简称时间复杂度。渐进时间复杂度用大写O来表示，所以也被称为大O表示法。*** 简单来说，时间复杂度就是把时间规模函数T(n)简化为一个数量级，这个数量级">
+<meta property="og:type" content="article">
+<meta property="og:title" content="时间复杂度简析">
+<meta property="og:url" content="https://jacqueline356.github.io/2021/08/25/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AE%80%E6%9E%90/index.html">
 <meta property="og:site_name" content="枫筝">
+<meta property="og:description" content="时间复杂度概念：*若存在函数 f（n），使得当n趋近于无穷大时，T（n）&#x2F; f（n）的极限值为不等于零的常数，则称 f（n）是T（n）的同数量级函数。* ** *记作* *T（n）&#x3D; O（f（n）），称O**（f（n））**为算法的渐进时间复杂度，简称时间复杂度。渐进时间复杂度用大写O来表示，所以也被称为大O表示法。*** 简单来说，时间复杂度就是把时间规模函数T(n)简化为一个数量级，这个数量级">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-08-19T06:20:38.366Z">
-<meta property="article:modified_time" content="2021-08-19T06:20:38.366Z">
+<meta property="article:published_time" content="2021-08-25T08:29:10.000Z">
+<meta property="article:modified_time" content="2021-08-25T08:59:53.418Z">
 <meta property="article:author" content="枫筝">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://jacqueline356.github.io/categories/index.html">
+  <link rel="canonical" href="https://jacqueline356.github.io/2021/08/25/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AE%80%E6%9E%90/index.html">
   
     <link rel="alternate" href="/atom.xml" title="枫筝" type="application/atom+xml">
   
@@ -340,127 +343,243 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="article article-categories article-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs">分类</h1>
-      <p class="text-muted hidden-xs">共 3 个分类</p>
-      <nav role="navigation" id="nav-main" class="okayNav">
-        <ul>
-          <li><a href="/categories">All</a></li>
-          
-          <li><a href="/categories/test/">test</a></li>
-          
-          <li><a href="/categories/LeetCode/">LeetCode</a></li>
-          
-          <li><a href="/categories/知识点/">知识点</a></li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <div class="article-body">
+  
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.</span> <span class="toc-text">时间复杂度</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-时间复杂度简析" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
       
-      <div class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapsetest" aria-expanded="true">
-              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
-              test
-            </a>
-            <small class="text-muted">(Total 3 articles)</small>
-          </h3>
-        </div>
-        <div id="collapsetest" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingtest">
-          <div class="panel-body">
-            <div class="collection">
-              
-                
-<a href="/2021/08/18/hello-world/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2021-08-18T03:20:17.067Z" itemprop="datePublished">2021-08-18</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> helloworld
-</a>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      时间复杂度简析
+    </h1>
+  
 
-
-              
-                
-<a href="/2021/08/19/%E6%B5%8B%E8%AF%95/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2021-08-19T03:58:19.155Z" itemprop="datePublished">2021-08-19</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 嘿
-</a>
-
-
-              
-                
-<a href="/2021/08/24/test-1/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2021-08-24T01:28:45.000Z" itemprop="datePublished">2021-08-24</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 测试
-</a>
-
-
-              
-            </div>
-          </div>
-        </div>
-      </div>
       
-      <div class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapseLeetCode" aria-expanded="true">
-              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
-              LeetCode
-            </a>
-            <small class="text-muted">(Total 1 articles)</small>
-          </h3>
-        </div>
-        <div id="collapseLeetCode" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingLeetCode">
-          <div class="panel-body">
-            <div class="collection">
-              
-                
-<a href="/2021/08/25/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-1/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2021-08-25T02:33:12.000Z" itemprop="datePublished">2021-08-25</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 两数之和
-</a>
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2021/08/25/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AE%80%E6%9E%90/" class="article-date">
+	  <time datetime="2021-08-25T08:29:10.000Z" itemprop="datePublished">2021-08-25</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/">知识点</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
+  </span>
 
 
-              
-            </div>
-          </div>
-        </div>
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/08/25/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AE%80%E6%9E%90/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 271(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+	
+
       </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
       
-      <div class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse知识点" aria-expanded="true">
-              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
-              知识点
-            </a>
-            <small class="text-muted">(Total 1 articles)</small>
-          </h3>
-        </div>
-        <div id="collapse知识点" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading知识点">
-          <div class="panel-body">
-            <div class="collection">
-              
-                
-<a href="/2021/08/25/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AE%80%E6%9E%90/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2021-08-25T08:29:10.000Z" itemprop="datePublished">2021-08-25</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 时间复杂度简析
-</a>
+        <h4 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h4><p>概念：<em><strong>*若存在函数 f（n），使得当n趋近于无穷大时，T（n）/ f（n）的极限值为不等于零的常数，则称 f（n）是T（n）的同数量级函数。*</strong></em></p>
+<p><em><strong>*<br>*</strong></em></p>
+<p><em><strong>*记作*</strong></em> <em><strong>*T（n）= O（f（n）），称O**（f（n））**为算法的渐进时间复杂度，简称时间复杂度。渐进时间复杂度用大写O来表示，所以也被称为</strong>大O表示法</em><em>。*</em>**</p>
+<p>简单来说，时间复杂度就是把时间规模函数T(n)简化为一个数量级，这个数量级可以是n, n^2, n^3 等。</p>
+<p>导出时间复杂度的原则：</p>
+<ol>
+<li><strong>如果运行时间是常数量级，用常数1表示。</strong></li>
+<li><strong>只保留时间函数中的最高阶项</strong></li>
+<li><strong>如果最高阶项存在，则省去最高阶项前面的系数。</strong></li>
+</ol>
+<p>例：</p>
+<table>
+<thead>
+<tr>
+<th align="center">原式</th>
+<th align="center">时间复杂度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">T（n) = 2</td>
+<td align="center">T（n） = O（1）</td>
+</tr>
+<tr>
+<td align="center">T (n) = 3n</td>
+<td align="center">T(n) = O(n)</td>
+</tr>
+<tr>
+<td align="center">T（n） =  5logn</td>
+<td align="center">T（n） = O（logn）</td>
+</tr>
+<tr>
+<td align="center">T（n） = 0.5n^2 + 0.5n</td>
+<td align="center">T（n） = O（n^2）</td>
+</tr>
+</tbody></table>
+<p>时间复杂度顺序</p>
+<p><em><strong>*O（1）&lt;*</strong></em> <em>*<em>*</em>*O（logn）&lt; ****O（n）&lt; ****O（n^2）************</em>*</p>
 
-
-              
-            </div>
-          </div>
-        </div>
-      </div>
       
     </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://jacqueline356.github.io/2021/08/25/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AE%80%E6%9E%90/" title="时间复杂度简析" target="_blank" rel="external">https://jacqueline356.github.io/2021/08/25/时间复杂度简析/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">枫筝</span><small class="ml-1x">不怕负重，要多多保重。</small></a></h3>
+        <div>一枚双子座的猪猪</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
   </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2021/08/25/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-1/" title="两数之和"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+        <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </main>
+
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 	
 	
@@ -521,6 +640,39 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 
