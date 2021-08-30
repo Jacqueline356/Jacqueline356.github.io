@@ -18,20 +18,20 @@
   
   
   <title>回文数 | 枫筝</title>
-  <meta name="description" content="给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。 思路：  首先要将整数转换为字符串 根据索引得出它的倒序结果 还要考虑数据溢出问题  如果该数字是回文，其后半部分反转后应该与原始数字的前半部分相同。 算法 首先，我们应该处理一些临界情况。所有负数都不可">
+  <meta name="description" content="题目： 给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。 思路：  首先要将整数转换为字符串 根据索引得出它的倒序结果 还要考虑数据溢出问题  如果该数字是回文，其后半部分反转后应该与原始数字的前半部分相同。 算法： 首先，我们应该处理一些临界情况。所有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回文数">
 <meta property="og:url" content="https://jacqueline356.github.io/2021/08/30/%E5%9B%9E%E6%96%87%E6%95%B0/index.html">
 <meta property="og:site_name" content="枫筝">
-<meta property="og:description" content="给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。 思路：  首先要将整数转换为字符串 根据索引得出它的倒序结果 还要考虑数据溢出问题  如果该数字是回文，其后半部分反转后应该与原始数字的前半部分相同。 算法 首先，我们应该处理一些临界情况。所有负数都不可">
+<meta property="og:description" content="题目： 给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。 思路：  首先要将整数转换为字符串 根据索引得出它的倒序结果 还要考虑数据溢出问题  如果该数字是回文，其后半部分反转后应该与原始数字的前半部分相同。 算法： 首先，我们应该处理一些临界情况。所有">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://jacqueline356.github.io/2021/08/30/images/%E5%9B%9E%E6%96%87%E6%95%B0/9_fig1.png">
+<meta property="og:image" content="https://jacqueline356.github.io/.io//9_fig1.png">
 <meta property="article:published_time" content="2021-08-30T01:42:20.000Z">
-<meta property="article:modified_time" content="2021-08-30T02:11:47.489Z">
+<meta property="article:modified_time" content="2021-08-30T02:22:57.521Z">
 <meta property="article:author" content="枫筝">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jacqueline356.github.io/2021/08/30/images/%E5%9B%9E%E6%96%87%E6%95%B0/9_fig1.png">
+<meta name="twitter:image" content="https://jacqueline356.github.io/.io//9_fig1.png">
   <!-- Canonical links -->
   <link rel="canonical" href="https://jacqueline356.github.io/2021/08/30/%E5%9B%9E%E6%96%87%E6%95%B0/index.html">
   
@@ -401,7 +401,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/08/30/%E5%9B%9E%E6%96%87%E6%95%B0/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 769(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 763(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
@@ -411,7 +411,8 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。</p>
+        <p>题目：</p>
+<p>给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。</p>
 <p>回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。</p>
 <p>思路：</p>
 <ul>
@@ -420,19 +421,17 @@
 <li>还要考虑数据溢出问题</li>
 </ul>
 <p>如果该数字是回文，其后半部分反转后应该与原始数字的前半部分相同。</p>
-<p>算法</p>
+<p>算法：</p>
 <p>首先，我们应该处理一些临界情况。所有负数都不可能是回文，例如：-123 不是回文，因为 - 不等于 3。所以我们可以对所有负数返回 false。除了 0 以外，所有个位是 0 的数字不可能是回文，因为最高位不等于 0。所以我们可以对所有大于 0 且个位是 0 的数字返回 false。</p>
 <p>现在，让我们来考虑如何反转后半部分的数字。</p>
 <p>对于数字 1221，如果执行 1221 % 10，我们将得到最后一位数字 1，要得到倒数第二位数字，我们可以先通过除以 10 把最后一位数字从 1221 中移除，1221 / 10 = 122，再求出上一步结果除以 10 的余数，122 % 10 = 2，就可以得到倒数第二位数字。如果我们把最后一位数字乘以 10，再加上倒数第二位数字，1 * 10 + 2 = 12，就得到了我们想要的反转后的数字。如果继续这个过程，我们将得到更多位数的反转数字。</p>
 <p>现在的问题是，我们如何知道反转数字的位数已经达到原始数字位数的一半？</p>
 <p>由于整个过程我们不断将原始数字除以 10，然后给反转后的数字乘上 10，所以，当原始数字小于或等于反转后的数字时，就意味着我们已经处理了一半位数的数字了。</p>
-<img src="../images/%E5%9B%9E%E6%96%87%E6%95%B0/9_fig1.png" alt="img" style="zoom: 50%;">
-
-
+<img src="/.io//9_fig1.png" alt="img" style="zoom: 50%;">
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 特殊情况：</span></span><br><span class="line">        <span class="comment">// 如上所述，当 x &lt; 0 时，x 不是回文数。</span></span><br><span class="line">        <span class="comment">// 同样地，如果数字的最后一位是 0，为了使该数字为回文，</span></span><br><span class="line">        <span class="comment">// 则其第一位数字也应该是 0</span></span><br><span class="line">        <span class="comment">// 只有 0 满足这一属性</span></span><br><span class="line">        <span class="keyword">if</span> (x &lt; <span class="number">0</span> || (x % <span class="number">10</span> == <span class="number">0</span> &amp;&amp; x != <span class="number">0</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"> 	<span class="keyword">int</span> revertedNumber = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (x &gt; revertedNumber) &#123;</span><br><span class="line">        revertedNumber = revertedNumber * <span class="number">10</span> + x % <span class="number">10</span>;</span><br><span class="line">        x /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 当数字长度为奇数时，我们可以通过 revertedNumber/10 去除处于中位的数字。</span></span><br><span class="line">    <span class="comment">// 例如，当输入为 12321 时，在 while 循环的末尾我们可以得到 x = 12，revertedNumber =123，</span></span><br><span class="line">    <span class="comment">// 由于处于中位的数字不影响回文（它总是与自己相等），所以我们可以简单地将其去除。</span></span><br><span class="line">    <span class="keyword">return</span> x == revertedNumber || x == revertedNumber / <span class="number">10</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>复杂度分析</p>
-<p>时间复杂度：O(\log n)O(logn)，对于每次迭代，我们会将输入除以 1010，因此时间复杂度为 O(\log n)O(logn)。<br>空间复杂度：O(1)O(1)。我们只需要常数空间存放若干变量。</p>
+<p>时间复杂度：O(logn)，对于每次迭代，我们会将输入除以 10，因此时间复杂度为 O(logn)。<br>空间复杂度：O(1)。我们只需要常数空间存放若干变量。</p>
 
       
     </div>
